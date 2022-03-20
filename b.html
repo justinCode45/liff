@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <title>松山高中畢旅行程及注意事項</title>
+
+    </head>
+
+    <body>
+
+        hi hihi
+
+        <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+
+    <script>
+
+            var liffID = '1655801767-W4yVj3Nn';
+
+
+
+
+
+            liff.init({
+
+            liffId: liffID
+
+            }).then(function() {
+
+                console.log('LIFF init');
+
+                
+
+                liff.sendMessages([
+
+                {
+
+                    type: 'text',
+
+                     text: '我畢旅請全班吃宵夜'
+
+                }
+
+                ]).then(function(res) {
+
+                    liff.closeWindow();
+
+                    console.log(res)
+
+                }).catch(function(error) {
+
+                    console.log(error);
+
+                });
+
+    // 這邊開始寫使用其他功能
+
+       
+
+    
+
+    
+
+  }).catch(function(error) {
+
+    console.log(error);
+
+  });
+
+        </script> 
+
+    </body>
+
+</html>
+
+ 
